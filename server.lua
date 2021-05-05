@@ -10,7 +10,7 @@ ESX.RegisterServerCallback('dReport:getUsergroup', function(source, cb)
 	cb(group)
 end)
 
-RegisterCommand('reportee', function(source, args, rawCommand)
+RegisterCommand('report', function(source, args, rawCommand)
 	local xPlayer = ESX.GetPlayerFromId(source)
     local NomDuMec = xPlayer.getName()
     local idDuMec = source
